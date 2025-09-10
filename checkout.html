@@ -22,43 +22,84 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+  <header class="header">
         <div class="container">
             <div class="header-content">
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
                 <!-- Logo -->
                 <div class="logo">
                     <a href="index.html">
-                        <h1>Abaya Elegance</h1>
+                        <h1>Khom Elegance</h1>
                     </a>
                 </div>
-                
-                <!-- Checkout Progress -->
-                <div class="checkout-progress">
-                    <div class="progress-step completed">
-                        <span class="step-number">1</span>
-                        <span class="step-label">Cart</span>
+
+                <!-- Navigation -->
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active" data-i18n="home">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="catalog.html" class="nav-link" data-i18n="categories">Catégories <i
+                                    class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu" id="categoriesMenu">
+                                <li><a href="abaya.html">Abaya</a></li>
+                                <li><a href="hijab.html">Hijab</a></li>
+                                <li><a href="foulard.html">Foulard</a></li>
+                                <li><a href="tapis.html">Robe de priere</a></li>
+                                <li><a href="catalog.html">Tapis</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="catalog.html" class="nav-link" data-i18n="shop">Boutique</a></li>
+                        <li><a href="about.html" class="nav-link" data-i18n="about">À propos</a></li>
+                        <li><a href="contact.html" class="nav-link" data-i18n="contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <div class="language-selector">
+                        <select aria-label="Sélecteur de langue">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
                     </div>
-                    <div class="progress-line"></div>
-                    <div class="progress-step active">
-                        <span class="step-number">2</span>
-                        <span class="step-label">Checkout</span>
+                    <button class="search-toggle" id="searchToggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                    <div class="user-menu">
+                        <button class="user-toggle" id="userToggle">
+                            <i class="fas fa-user"></i>
+                        </button>
+                        <div class="user-dropdown" id="userDropdown">
+                            <div class="auth-links" id="authLinks">
+                                <a href="login.html">Sign In</a>
+                                <a href="register.html">Register</a>
+                            </div>
+                            <div class="user-links" id="userLinks" style="display: none;">
+                                <a href="account.html">My Account</a>
+                                <a href="account.html#orders">Orders</a>
+                                <a href="#" id="signOutBtn">Sign Out</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="progress-line"></div>
-                    <div class="progress-step">
-                        <span class="step-number">3</span>
-                        <span class="step-label">Complete</span>
+
+                    <div class="cart-icon">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
                     </div>
-                </div>
-                
-                <!-- Security Badge -->
-                <div class="security-badge">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Secure Checkout</span>
                 </div>
             </div>
         </div>
     </header>
-    
     <!-- Main Content -->
     <main class="main">
         <!-- Checkout Section -->
