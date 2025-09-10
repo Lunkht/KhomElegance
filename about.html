@@ -60,6 +60,9 @@
                 
                 <!-- Header Actions -->
                 <div class="header-actions">
+                    <button id="themeToggle" aria-label="Changer le mode" style="background:none;border:none;font-size:1.5rem;cursor:pointer;margin-right:1rem;">
+                        <i id="themeIcon" class="fas fa-moon"></i>
+                    </button>
                     <div class="language-selector">
                         <select aria-label="Sélecteur de langue">
                             <option value="fr">FR</option>
@@ -299,5 +302,46 @@
     <script src="js/cart.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    // Thème automatique + override utilisateur
+    function applyTheme(mode) {
+        document.body.classList.toggle('dark-mode', mode === 'dark');
+        document.getElementById('themeIcon').className = mode === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+
+    function getSystemTheme() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function getSavedTheme() {
+        return localStorage.getItem('theme');
+    }
+
+    function setTheme(mode) {
+        localStorage.setItem('theme', mode);
+        applyTheme(mode);
+    }
+
+    // Initialisation
+    function initTheme() {
+        let theme = getSavedTheme() || getSystemTheme();
+        applyTheme(theme);
+    }
+    initTheme();
+
+    // Écoute du système
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (!getSavedTheme()) {
+            applyTheme(e.matches ? 'dark' : 'light');
+        }
+    });
+
+    // Bouton toggle
+    document.getElementById('themeToggle').addEventListener('click', function() {
+        let current = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+        let next = current === 'dark' ? 'light' : 'dark';
+        setTheme(next);
+    });
+    </script>
 </body>
 </html>
