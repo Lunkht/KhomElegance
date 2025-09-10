@@ -21,11 +21,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
   background-color: var(--background-white);
