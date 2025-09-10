@@ -60,9 +60,6 @@
                 
                 <!-- Header Actions -->
                 <div class="header-actions">
-                    <button id="themeToggle" aria-label="Changer le mode" style="background:none;border:none;font-size:1.5rem;cursor:pointer;margin-right:1rem;">
-                        <i id="themeIcon" class="fas fa-moon"></i>
-                    </button>
                     <div class="language-selector">
                         <select aria-label="Sélecteur de langue">
                             <option value="fr">FR</option>
@@ -106,27 +103,27 @@
         <div class="mobile-menu-content">
             <nav class="mobile-nav">
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="catalog.html">Boutique</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Shop All</a></li>
                     <li class="mobile-dropdown">
                         <button class="mobile-dropdown-toggle">Collections <i class="fas fa-chevron-down"></i></button>
                         <ul class="mobile-dropdown-menu" id="mobileCategoriesMenu">
-                            <!-- Les catégories seront chargées dynamiquement -->
+                            <!-- Categories will be loaded dynamically -->
                         </ul>
                     </li>
-                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             
             <div class="mobile-menu-actions">
                 <div class="mobile-auth" id="mobileAuth">
-                    <a href="login.html" class="btn-outline">Connexion</a>
-                    <a href="register.html" class="btn-primary">Créer un compte</a>
+                    <a href="login.html" class="btn-outline">Sign In</a>
+                    <a href="register.html" class="btn-primary">Register</a>
                 </div>
                 <div class="mobile-user" id="mobileUser" style="display: none;">
-                    <a href="account.html">Mon compte</a>
-                    <a href="#" id="mobileSignOutBtn">Déconnexion</a>
+                    <a href="account.html">My Account</a>
+                    <a href="#" id="mobileSignOutBtn">Sign Out</a>
                 </div>
             </div>
         </div>
@@ -136,7 +133,7 @@
     <div class="search-overlay" id="searchOverlay">
         <div class="search-container">
             <div class="search-box">
-                <input type="text" placeholder="Rechercher une abaya..." id="searchInput">
+                <input type="text" placeholder="Search for abayas..." id="searchInput">
                 <button class="search-btn" id="searchBtn">
                     <i class="fas fa-search"></i>
                 </button>
@@ -149,88 +146,117 @@
     
     <!-- Main Content -->
     <main class="main">
-        <!-- Hero Section Modernisée -->
-        <section class="hero-section" style="background: linear-gradient(120deg, var(--primary-color), var(--background-light)); padding: 4rem 0 2rem 0;">
-            <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
-                <div style="flex:1; min-width:280px;">
-                    <h1 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--background-white); margin-bottom: 1rem;">L'élégance, la modernité, la modestie</h1>
-                    <p style="font-size: 1.2rem; color: var(--background-white); margin-bottom: 2rem;">Découvrez notre univers où chaque abaya raconte une histoire de raffinement et d'inclusivité.</p>
-                    <a href="catalog.html" class="btn-primary" style="font-size:1.1rem;">Découvrir la collection</a>
-                </div>
-                <div style="flex:1; min-width:280px; text-align:center;">
-                    <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=elegant%20abaya%20fashion%20boutique%20interior%20with%20beautiful%20displays%20modern%20islamic%20design%20emerald%20and%20gold%20colors&image_size=landscape_4_3" alt="Boutique moderne" style="max-width:100%; border-radius:1rem; box-shadow:0 8px 32px rgba(0,0,0,0.12);">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1>About Abaya Elegance</h1>
+                    <p>Discover the story behind our commitment to modest fashion and elegance</p>
                 </div>
             </div>
         </section>
-
-        <!-- Valeurs et Mission Modernisées -->
-        <section class="values-section" style="background: var(--background-light); padding: 3rem 0;">
+        
+        <!-- About Content -->
+        <section class="about-content">
             <div class="container">
-                <h2 style="text-align:center; font-family:'Playfair Display',serif;">Nos valeurs</h2>
-                <div class="values-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:2rem; margin-top:2rem;">
-                    <div class="value-item" style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:2rem; text-align:center;">
-                        <i class="fas fa-heart" style="font-size:2.5rem; color:var(--primary-color);"></i>
-                        <h3>Qualité</h3>
-                        <p>Des tissus soigneusement sélectionnés pour un confort et une durabilité exceptionnels.</p>
+                <!-- Our Story -->
+                <div class="about-section">
+                    <div class="about-text">
+                        <h2>Our Story</h2>
+                        <p>Founded with a passion for modest fashion, Abaya Elegance has been serving women worldwide with beautiful, high-quality abayas that combine traditional values with contemporary style. Our journey began with a simple mission: to provide elegant, comfortable, and affordable modest wear for the modern woman.</p>
+                        <p>We believe that modesty and style go hand in hand. Every piece in our collection is carefully designed and crafted to ensure you feel confident, comfortable, and beautiful while staying true to your values.</p>
                     </div>
-                    <div class="value-item" style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:2rem; text-align:center;">
-                        <i class="fas fa-leaf" style="font-size:2.5rem; color:var(--primary-color);"></i>
-                        <h3>Éthique</h3>
-                        <p>Une fabrication responsable et respectueuse de l'environnement et des personnes.</p>
+                    <div class="about-image">
+                        <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=elegant%20abaya%20fashion%20boutique%20interior%20with%20beautiful%20displays%20modern%20islamic%20design%20emerald%20and%20gold%20colors&image_size=landscape_4_3" alt="Our boutique interior">
                     </div>
-                    <div class="value-item" style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:2rem; text-align:center;">
-                        <i class="fas fa-users" style="font-size:2.5rem; color:var(--primary-color);"></i>
-                        <h3>Inclusivité</h3>
-                        <p>Des modèles pensés pour toutes les femmes, toutes les morphologies, tous les styles.</p>
+                </div>
+                
+                <!-- Our Mission -->
+                <div class="about-section reverse">
+                    <div class="about-image">
+                        <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=diverse%20women%20wearing%20elegant%20abayas%20different%20styles%20colors%20modest%20fashion%20empowerment&image_size=landscape_4_3" alt="Women in our abayas">
                     </div>
-                    <div class="value-item" style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:2rem; text-align:center;">
-                        <i class="fas fa-star" style="font-size:2.5rem; color:var(--primary-color);"></i>
-                        <h3>Excellence</h3>
-                        <p>Un service client et une expérience d'achat irréprochables.</p>
+                    <div class="about-text">
+                        <h2>Our Mission</h2>
+                        <p>At Abaya Elegance, our mission is to empower women through modest fashion that doesn't compromise on style or quality. We strive to:</p>
+                        <ul>
+                            <li>Provide high-quality, ethically-made modest wear</li>
+                            <li>Celebrate diversity and inclusivity in fashion</li>
+                            <li>Support women's confidence and self-expression</li>
+                            <li>Preserve traditional values while embracing modern trends</li>
+                            <li>Offer exceptional customer service and shopping experience</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Our Values -->
+                <div class="values-section">
+                    <h2>Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Quality</h3>
+                            <p>We use only the finest fabrics and materials, ensuring every piece meets our high standards for comfort and durability.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Sustainability</h3>
+                            <p>We're committed to ethical manufacturing practices and sustainable fashion that respects both people and the planet.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Inclusivity</h3>
+                            <p>Our designs celebrate women of all backgrounds, sizes, and styles, ensuring everyone can find their perfect abaya.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Excellence</h3>
+                            <p>From design to delivery, we strive for excellence in every aspect of our business and customer experience.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Section -->
+                <div class="team-section">
+                    <h2>Meet Our Team</h2>
+                    <p>Our passionate team of designers, craftspeople, and customer service professionals work together to bring you the best in modest fashion.</p>
+                    <div class="team-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years of Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Countries Served</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Unique Designs</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Témoignages Modernes -->
-        <section class="testimonials-section" style="padding:3rem 0;">
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
             <div class="container">
-                <h2 style="text-align:center; font-family:'Playfair Display',serif;">Elles témoignent</h2>
-                <div style="display:flex; flex-wrap:wrap; gap:2rem; justify-content:center; margin-top:2rem;">
-                    <div style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:1.5rem; max-width:320px;">
-                        <p style="font-style:italic;">“Enfin une boutique où je trouve des abayas modernes et confortables !”</p>
-                        <div style="margin-top:1rem; font-weight:600; color:var(--primary-color);">Amina, Paris</div>
-                    </div>
-                    <div style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:1.5rem; max-width:320px;">
-                        <p style="font-style:italic;">“La qualité est au rendez-vous, et le service client est top !”</p>
-                        <div style="margin-top:1rem; font-weight:600; color:var(--primary-color);">Sara, Lyon</div>
-                    </div>
-                    <div style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:1.5rem; max-width:320px;">
-                        <p style="font-style:italic;">“J'adore la diversité des modèles proposés.”</p>
-                        <div style="margin-top:1rem; font-weight:600; color:var(--primary-color);">Nour, Bruxelles</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Modernes -->
-        <section class="team-section" style="background:var(--background-light); padding:3rem 0;">
-            <div class="container">
-                <h2 style="text-align:center; font-family:'Playfair Display',serif;">Notre impact</h2>
-                <div class="team-stats" style="display:flex; flex-wrap:wrap; gap:2rem; justify-content:center; margin-top:2rem;">
-                    <div class="stat-item" style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:2rem; text-align:center; min-width:180px;">
-                        <div class="stat-number" style="font-size:2rem; color:var(--primary-color);">10+</div>
-                        <div class="stat-label">ans d'expérience</div>
-                    </div>
-                    <!-- Stat 'pays desservis' retirée -->
-                    <div class="stat-item" style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:2rem; text-align:center; min-width:180px;">
-                        <div class="stat-number" style="font-size:2rem; color:var(--primary-color);">10K+</div>
-                        <div class="stat-label">clientes satisfaites</div>
-                    </div>
-                    <div class="stat-item" style="background:var(--background-white); border-radius:1rem; box-shadow:0 4px 16px rgba(0,0,0,0.07); padding:2rem; text-align:center; min-width:180px;">
-                        <div class="stat-number" style="font-size:2rem; color:var(--primary-color);">500+</div>
-                        <div class="stat-label">modèles uniques</div>
-                    </div>
+                <div class="cta-content">
+                    <h2>Ready to Discover Your Perfect Abaya?</h2>
+                    <p>Explore our collection and find the perfect piece that reflects your style and values.</p>
+                    <a href="catalog.html" class="btn-primary">Shop Collection</a>
                 </div>
             </div>
         </section>
@@ -242,7 +268,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Abaya Elegance</h3>
-                    <p>Découvrez le parfait équilibre entre tradition et modernité avec notre collection d'abayas.</p>
+                    <p>Discover the perfect blend of tradition and contemporary style with our exquisite collection of abayas.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -252,44 +278,44 @@
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Liens utiles</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="catalog.html">Boutique</a></li>
-                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#">Guide des tailles</a></li>
+                        <li><a href="#">Size Guide</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Service client</h4>
+                    <h4>Customer Service</h4>
                     <ul>
-                        <li><a href="#">Infos livraison</a></li>
-                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Suivi de commande</a></li>
+                        <li><a href="#">Track Order</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Newsletter</h4>
-                    <p>Recevez nos nouveautés et offres exclusives.</p>
+                    <p>Subscribe to receive updates on new arrivals and exclusive offers.</p>
                     <form class="newsletter-form" id="footerNewsletterForm">
-                        <input type="email" placeholder="Votre email" required>
-                        <button type="submit">S'inscrire</button>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2024 Abaya Elegance. Tous droits réservés.</p>
+                    <p>&copy; 2024 Abaya Elegance. All rights reserved.</p>
                     <div class="footer-links">
-                        <a href="#">Politique de confidentialité</a>
-                        <a href="#">Conditions d'utilisation</a>
-                        <a href="#">Politique des cookies</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
                     </div>
                 </div>
             </div>
@@ -302,46 +328,5 @@
     <script src="js/cart.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
-    <script>
-    // Thème automatique + override utilisateur
-    function applyTheme(mode) {
-        document.body.classList.toggle('dark-mode', mode === 'dark');
-        document.getElementById('themeIcon').className = mode === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-    }
-
-    function getSystemTheme() {
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-
-    function getSavedTheme() {
-        return localStorage.getItem('theme');
-    }
-
-    function setTheme(mode) {
-        localStorage.setItem('theme', mode);
-        applyTheme(mode);
-    }
-
-    // Initialisation
-    function initTheme() {
-        let theme = getSavedTheme() || getSystemTheme();
-        applyTheme(theme);
-    }
-    initTheme();
-
-    // Écoute du système
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        if (!getSavedTheme()) {
-            applyTheme(e.matches ? 'dark' : 'light');
-        }
-    });
-
-    // Bouton toggle
-    document.getElementById('themeToggle').addEventListener('click', function() {
-        let current = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-        let next = current === 'dark' ? 'light' : 'dark';
-        setTheme(next);
-    });
-    </script>
 </body>
 </html>
