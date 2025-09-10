@@ -1,5 +1,4 @@
 /* CSS Variables */
-/* Variables mode clair */
 :root {
   --primary-color: #2D5A27; /* Emerald Green */
   --secondary-color: #D4AF37; /* Gold */
@@ -17,17 +16,24 @@
   --transition: all 0.3s ease;
 }
 
-/* Variables mode sombre */
-body.dark-mode {
-  --primary-color: #1A4019;
-  --secondary-color: #D4AF37;
-  --accent-color: #2D5A27;
-  --text-primary: #F8F9FA;
-  --text-secondary: #BDC3C7;
-  --text-light: #7F8C8D;
-  --background-light: #23272A;
-  --background-white: #181A1B;
-  --border-color: #343A40;
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--background-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Typography */
