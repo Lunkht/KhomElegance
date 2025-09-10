@@ -1,19 +1,6 @@
 /* CSS Variables */
+/* Variables mode clair */
 :root {
-/* Mode sombre */
-}
-
-body.dark-mode {
-  --primary-color: #1A4019;
-  --secondary-color: #D4AF37;
-  --accent-color: #2D5A27;
-  --text-primary: #F8F9FA;
-  --text-secondary: #BDC3C7;
-  --text-light: #7F8C8D;
-  --background-light: #23272A;
-  --background-white: #181A1B;
-  --border-color: #343A40;
-}
   --primary-color: #2D5A27; /* Emerald Green */
   --secondary-color: #D4AF37; /* Gold */
   --accent-color: #1A4019; /* Darker Green */
@@ -30,24 +17,7 @@ body.dark-mode {
   --transition: all 0.3s ease;
 }
 
-/* Reset and Base Styles */
- :root {
-  --primary-color: #2D5A27; /* Emerald Green */
-  --secondary-color: #D4AF37; /* Gold */
-  --accent-color: #1A4019; /* Darker Green */
-  --text-primary: #2C3E50;
-  --text-secondary: #7F8C8D;
-  --text-light: #BDC3C7;
-  --background-light: #F8F9FA;
-  --background-white: #FFFFFF;
-  --border-color: #E9ECEF;
-  --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
-  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.15);
-  --shadow-heavy: 0 8px 30px rgba(0, 0, 0, 0.2);
-  --border-radius: 8px;
-  --transition: all 0.3s ease;
-}
-
+/* Variables mode sombre */
 body.dark-mode {
   --primary-color: #1A4019;
   --secondary-color: #D4AF37;
@@ -58,8 +28,6 @@ body.dark-mode {
   --background-light: #23272A;
   --background-white: #181A1B;
   --border-color: #343A40;
-}
-  padding: 0 20px;
 }
 
 /* Typography */
